@@ -1,0 +1,41 @@
+{
+  "format": "agent-hq-room-pack",
+  "version": 1,
+  "name": "Inbox",
+  "description": "Triage and reply drafts. Triage (Message triage), Replies (Drafts).",
+  "author": "Agent HQ",
+  "exportedAt": "2026-10-16T22:14:14.186Z",
+  "app": "1.1.1",
+  "rooms": [
+    {
+      "key": "inbox",
+      "name": "Inbox",
+      "color": "#f97316",
+      "description": "Triage and reply drafts",
+      "agents": [
+        {
+          "key": "triagem",
+          "name": "Triage",
+          "role": "Message triage",
+          "model": "haiku",
+          "brief": "Sorts messages by urgency and prepares drafts.",
+          "never": "Never sends messages; only drafts them for approval.",
+          "lead": true
+        },
+        {
+          "key": "respostas",
+          "name": "Replies",
+          "role": "Drafts",
+          "model": "haiku",
+          "brief": "Writes polite, to-the-point drafts.",
+          "never": "Never promises deadlines or prices."
+        }
+      ],
+      "brain": {
+        "rules": [],
+        "exceptions": []
+      },
+      "connectors": []
+    }
+  ]
+}

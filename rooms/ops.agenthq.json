@@ -1,0 +1,41 @@
+{
+  "format": "agent-hq-room-pack",
+  "version": 1,
+  "name": "Ops",
+  "description": "Infra, scripts and automations. Operator (DevOps), Monitor (System health).",
+  "author": "Agent HQ",
+  "exportedAt": "2026-10-16T22:14:14.185Z",
+  "app": "1.1.1",
+  "rooms": [
+    {
+      "key": "ops",
+      "name": "Ops",
+      "color": "#ef4444",
+      "description": "Infra, scripts and automations",
+      "agents": [
+        {
+          "key": "operador",
+          "name": "Operator",
+          "role": "DevOps",
+          "model": "sonnet",
+          "brief": "Takes care of scripts, automations and the local environment.",
+          "never": "Never runs destructive commands without approval.",
+          "lead": true
+        },
+        {
+          "key": "monitor",
+          "name": "Monitor",
+          "role": "System health",
+          "model": "haiku",
+          "brief": "Checks services, logs and resource usage.",
+          "never": "Never restarts services without asking."
+        }
+      ],
+      "brain": {
+        "rules": [],
+        "exceptions": []
+      },
+      "connectors": []
+    }
+  ]
+}

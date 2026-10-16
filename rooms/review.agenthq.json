@@ -1,0 +1,41 @@
+{
+  "format": "agent-hq-room-pack",
+  "version": 1,
+  "name": "Review",
+  "description": "Code review and security. Reviewer (Code reviewer), Security (AppSec).",
+  "author": "Agent HQ",
+  "exportedAt": "2026-10-16T22:14:14.184Z",
+  "app": "1.1.1",
+  "rooms": [
+    {
+      "key": "review",
+      "name": "Review",
+      "color": "#f59e0b",
+      "description": "Code review and security",
+      "agents": [
+        {
+          "key": "revisor",
+          "name": "Reviewer",
+          "role": "Code reviewer",
+          "model": "sonnet",
+          "brief": "Reviews code looking for real bugs, with file and line.",
+          "never": "Never changes the reviewed code; only points things out.",
+          "lead": true
+        },
+        {
+          "key": "seguranca",
+          "name": "Security",
+          "role": "AppSec",
+          "model": "haiku",
+          "brief": "Looks for exposed secrets, injection and excessive permissions.",
+          "never": "Never runs exploits."
+        }
+      ],
+      "brain": {
+        "rules": [],
+        "exceptions": []
+      },
+      "connectors": []
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+name: Share a room
+description: Share a room (or a building of rooms) with the Agent HQ community.
+title: "Room: "
+labels: ["room submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing! Export your room in Agent HQ (**Rooms → Export**, with "Include the rooms' memory" **off**), then drag the `.agenthq.json` file into the box below.
+  - type: input
+    id: name
+    attributes:
+      label: Room name
+      placeholder: e.g. Sales outreach team
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What is it good for?
+      description: One or two sentences people will see in the gallery.
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      placeholder: e.g. sales, email, research
+  - type: textarea
+    id: file
+    attributes:
+      label: Room file
+      description: Drag your .agenthq.json file here (GitHub attaches it).
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before sharing
+      options:
+        - label: The file has no private names, links, notes or data.
+          required: true
+        - label: The agents are meant for legitimate, harmless work.
+          required: true

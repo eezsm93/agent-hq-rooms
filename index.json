@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "rooms": [
+    {
+      "id": "starter-office",
+      "file": "rooms/starter-office.agenthq.json",
+      "name": "Starter office",
+      "description": "Every default room in one go: research, development, review, docs, creative, ops, data and inbox teams.",
+      "author": "Agent HQ",
+      "tags": [
+        "starter",
+        "all rooms"
+      ],
+      "rooms": 8,
+      "agents": 18,
+      "color": "#38bdf8"
+    },
+    {
+      "id": "research",
+      "file": "rooms/research.agenthq.json",
+      "name": "Research",
+      "description": "Repositories, docs and trends. Radar (Lead researcher), Analyst (Solution comparer).",
+      "author": "Agent HQ",
+      "tags": [
+        "research",
+        "web",
+        "comparison"
+      ],
+      "rooms": 1,
+      "agents": 2,
+      "color": "#4f7cff"
+    },
+    {
+      "id": "dev",
+      "file": "rooms/dev.agenthq.json",
+      "name": "Dev",
+      "description": "Writes and ships code. Architect (Tech lead), Coder (Developer), Tester (Automated tests).",
+      "author": "Agent HQ",
+      "tags": [
+        "coding",
+        "testing",
+        "engineering"
+      ],
+      "rooms": 1,
+      "agents": 3,
+      "color": "#22c55e"
+    },
+    {
+      "id": "review",
+      "file": "rooms/review.agenthq.json",
+      "name": "Review",
+      "description": "Code review and security. Reviewer (Code reviewer), Security (AppSec).",
+      "author": "Agent HQ",
+      "tags": [
+        "code review",
+        "security"
+      ],
+      "rooms": 1,
+      "agents": 2,
+      "color": "#f59e0b"
+    },
+    {
+      "id": "docs",
+      "file": "rooms/docs.agenthq.json",
+      "name": "Docs",
+      "description": "Documentation and summaries. Writer (Technical writer), Editor (Copy editor).",
+      "author": "Agent HQ",
+      "tags": [
+        "writing",
+        "documentation"
+      ],
+      "rooms": 1,
+      "agents": 2,
+      "color": "#06b6d4"
+    },
+    {
+      "id": "creative",
+      "file": "rooms/creative.agenthq.json",
+      "name": "Creative",
+      "description": "Scripts, thumbnails and video. Director (Creative director), Scriptwriter (Scripts and hooks), Designer (Thumbnails and artwork).",
+      "author": "Agent HQ",
+      "tags": [
+        "content",
+        "video",
+        "marketing"
+      ],
+      "rooms": 1,
+      "agents": 3,
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "ops",
+      "file": "rooms/ops.agenthq.json",
+      "name": "Ops",
+      "description": "Infra, scripts and automations. Operator (DevOps), Monitor (System health).",
+      "author": "Agent HQ",
+      "tags": [
+        "devops",
+        "monitoring"
+      ],
+      "rooms": 1,
+      "agents": 2,
+      "color": "#ef4444"
+    },
+    {
+      "id": "data",
+      "file": "rooms/data.agenthq.json",
+      "name": "Data",
+      "description": "Analyses and reports. Quant (Data analyst), Chart (Visualizations).",
+      "author": "Agent HQ",
+      "tags": [
+        "data",
+        "charts",
+        "reports"
+      ],
+      "rooms": 1,
+      "agents": 2,
+      "color": "#14b8a6"
+    },
+    {
+      "id": "inbox",
+      "file": "rooms/inbox.agenthq.json",
+      "name": "Inbox",
+      "description": "Triage and reply drafts. Triage (Message triage), Replies (Drafts).",
+      "author": "Agent HQ",
+      "tags": [
+        "email",
+        "triage",
+        "writing"
+      ],
+      "rooms": 1,
+      "agents": 2,
+      "color": "#f97316"
+    }
+  ]
+}

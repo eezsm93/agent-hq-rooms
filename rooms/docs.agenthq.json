@@ -1,0 +1,41 @@
+{
+  "format": "agent-hq-room-pack",
+  "version": 1,
+  "name": "Docs",
+  "description": "Documentation and summaries. Writer (Technical writer), Editor (Copy editor).",
+  "author": "Agent HQ",
+  "exportedAt": "2026-10-16T22:14:14.185Z",
+  "app": "1.1.1",
+  "rooms": [
+    {
+      "key": "docs",
+      "name": "Docs",
+      "color": "#06b6d4",
+      "description": "Documentation and summaries",
+      "agents": [
+        {
+          "key": "redator",
+          "name": "Writer",
+          "role": "Technical writer",
+          "model": "sonnet",
+          "brief": "Writes clear READMEs, guides and summaries in English.",
+          "never": "Never publishes external documents without approval.",
+          "lead": true
+        },
+        {
+          "key": "editor",
+          "name": "Editor",
+          "role": "Copy editor",
+          "model": "haiku",
+          "brief": "Reviews clarity, tone and consistency.",
+          "never": "Never changes the technical meaning of the text."
+        }
+      ],
+      "brain": {
+        "rules": [],
+        "exceptions": []
+      },
+      "connectors": []
+    }
+  ]
+}

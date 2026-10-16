@@ -1,0 +1,49 @@
+{
+  "format": "agent-hq-room-pack",
+  "version": 1,
+  "name": "Creative",
+  "description": "Scripts, thumbnails and video. Director (Creative director), Scriptwriter (Scripts and hooks), Designer (Thumbnails and artwork).",
+  "author": "Agent HQ",
+  "exportedAt": "2026-10-16T22:14:14.185Z",
+  "app": "1.1.1",
+  "rooms": [
+    {
+      "key": "creative",
+      "name": "Creative",
+      "color": "#8b5cf6",
+      "description": "Scripts, thumbnails and video",
+      "agents": [
+        {
+          "key": "diretor",
+          "name": "Director",
+          "role": "Creative director",
+          "model": "sonnet",
+          "brief": "Coordinates scripts, hooks and visual pieces. Splits independent pieces into parallel sub-agents.",
+          "never": "Never posts to social media or YouTube without approval.",
+          "lead": true
+        },
+        {
+          "key": "roteirista",
+          "name": "Scriptwriter",
+          "role": "Scripts and hooks",
+          "model": "haiku",
+          "brief": "Writes hooks and short scripts.",
+          "never": "Never copies third-party text."
+        },
+        {
+          "key": "designer",
+          "name": "Designer",
+          "role": "Thumbnails and artwork",
+          "model": "haiku",
+          "brief": "Describes and produces visual concepts and thumbnails.",
+          "never": "Never uses protected brands or characters."
+        }
+      ],
+      "brain": {
+        "rules": [],
+        "exceptions": []
+      },
+      "connectors": []
+    }
+  ]
+}
